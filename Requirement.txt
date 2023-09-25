@@ -1,5 +1,3 @@
-1) Connect to Source Data Base (MySql Database)
-2) Connect to Target Data Base (Postgres Database)
-3) Read data from source and Write to Target
-4) Generalize logic in such a way that I can give a table list with certain addition info and I should be able to process file which contains the table list, and then I want to choose only those table that are supposed to be loaded
-    (it will start reading once table at a time and read all the data from file into a collection and that collection will be used to load in target database)
+pandas==2.1.1
+mysql-connector-python==8.1.0
+psycopg2-binary==2.9.7
