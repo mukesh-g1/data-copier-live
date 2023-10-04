@@ -31,7 +31,8 @@ def load_table(db_details, data, column_names, table_name):
                                 db_host=TARGET_DB['DB_HOST'],
                                 db_name=TARGET_DB['DB_NAME'],
                                 db_user=TARGET_DB['DB_USER'],
-                                db_pass=TARGET_DB['DB_PASS']
+                                db_pass=TARGET_DB['DB_PASS'],
+                                db_port=TARGET_DB['DB_PORT']
                                 )
     cursor = connection.cursor()
     query = build_insert_query(table_name, column_names)

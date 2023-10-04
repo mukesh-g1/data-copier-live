@@ -7,14 +7,16 @@ DB_DETAILS = {
             'DB_HOST': 'localhost',
             'DB_NAME': 'retail_db',
             'DB_USER': os.environ.get('SOURCE_DB_USER'),
-            'DB_PASS': os.environ.get('SOURCE_DB_PASS')
+            'DB_PASS': os.environ.get('SOURCE_DB_PASS'),
+            'DB_PORT': 8806
         },
         'TARGET_DB': {
                     'DB_TYPE': 'postgres',
                     'DB_HOST': 'localhost',
                     'DB_NAME': 'retail_db',
                     'DB_USER': os.environ.get('TARGET_DB_USER'),
-                    'DB_PASS': os.environ.get('TARGET_DB_PASS')
+                    'DB_PASS': os.environ.get('TARGET_DB_PASS'),
+                    'DB_PORT': 5449
                 }
     }
 }
